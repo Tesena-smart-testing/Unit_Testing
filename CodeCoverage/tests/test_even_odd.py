@@ -1,5 +1,5 @@
 import unittest
-from even_odd import check_number
+from calculator.even_odd import check_number
 
 class TestCheckNumber(unittest.TestCase):
     def test_positive_even(self):

@@ -1,10 +1,11 @@
 import unittest
 from calculator.calculator import Calculator
 
-class TestCalculator(unittest.TestCase):
+class TestCalculatorAdd(unittest.TestCase):
 
     def test_add_positive_numbers(self):
-        self.assertEqual(Calculator.add(3, 5), 8)
+        result = Calculator.add(2, 3)
+        self.assertEqual(result, 5)        
 
     def test_add_negative_numbers(self):
         self.assertEqual(Calculator.add(-2, -3), -5)
