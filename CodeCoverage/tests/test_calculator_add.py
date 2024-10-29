@@ -23,5 +23,9 @@ class TestCalculatorAdd(unittest.TestCase):
     def test_add_floating_point(self):
         self.assertAlmostEqual(Calculator.add(3.14, 2.86), 6.00, places=2)
 
+    def test_add_string_input(self):
+        with self.assertRaises(TypeError):
+            Calculator.add("hello", 2)
+
 # if __name__ == '__main__':
 #     unittest.main()
